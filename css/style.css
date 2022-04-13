@@ -1,0 +1,58 @@
+body{
+    background-color: burlywood;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: animation-dvd 20s forwards infinite linear;
+    /* animation: animation-dvd 10s infinite alternate-reverse linear; */
+     animation-name: animation-dvd;
+    animation-duration: 20s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: both;
+}
+@keyframes animation-dvd{
+    /* from {top: 70%; background-color: yellow;}
+    to {left: 40%; background-color: blue;} */
+    15%{
+        top: 85%;
+        left: 50%;
+        background-color: blue;
+    }
+    30%{
+        top: 0%;
+        left: 93%;
+        background-color: green;
+    }
+    45%{
+        top: 85%;
+        left: 35%;
+        background-color: red;
+    }
+    60%{
+        top: 50%;
+        left: 0%;
+        background-color: blueviolet;
+    }
+    75%{
+        top: 10%;
+        left: 93%;
+        background-color: aquamarine;
+    }
+    90%{
+        top: 85%;
+        left: 72%;
+        background-color: brown;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+}
